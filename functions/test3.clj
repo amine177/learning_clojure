@@ -1,8 +1,12 @@
 (defn greeting
-  ([] (println "Hello, World!"))
-  ([x] (println "Hello" x))
-  ([x y] (println x y)))
+  ([] "Hello, world!")
+  ([x] (str "Hello "  x))
+  ([x y] (str x y)))
 
-(greeting)
-(greeting "cute user")
-(greeting "beautiful" "person")
+(println (greeting))
+(println (greeting "cute user"))
+(println (greeting "beautiful" "person"))
+
+(assert (= "Hello, world!" (greeting)))
+(assert (= "Hello Clojure!" (greeting "Clojure!")))
+(assert (= "Good morning Clojure!" (greeting "Good morning " "Clojure!")))
