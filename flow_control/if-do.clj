@@ -1,0 +1,5 @@
+(if (even? 5)
+  (do (println "5 is even")
+      true)
+  (do (println "5 is odd")
+      false))
