@@ -6,3 +6,4 @@
 (println (get person :occupation))
 (println (get person :age))
 (println (:occupation person))
+(println (:nonExistantKeyworName person "default-value"))
