@@ -5,3 +5,4 @@
    :occupation "Programmer"})
 (println (get person :occupation))
 (println (get person :age))
+(println (:occupation person))
